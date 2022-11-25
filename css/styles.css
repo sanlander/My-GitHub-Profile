@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Circular Std Book", sans-serif;
+  font-size: 14px;
+  background-color: var(--primary-color-white);
+  color: var(--text-color-dark-navy);
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+
+.container {
+  width: 320px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden {
+  display: none;
+}
+.loader {
+  width: 25px;
+  margin-left: 8px;
+}
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  background-color: #f6f8fa;
+  border-bottom: 1px solid #d8dee4;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 50px;
+}
+
+.foto-user {
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(74, 67, 67);
+}
+.profile-list {
+  margin-left: 24px;
+  max-width: 600px;
+}
+.profile-item {
+  padding: 8px;
+}
+.profile-item--title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+.profile-item--text {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  color: #8f9192;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-style: oblique;
+  background-color: #f5f6f8;
+  border-bottom: 1px solid #d8dee4;
+}
+.contacts-link {
+  text-decoration: none;
+  color: #8f9192;
+}
+.error-img {
+  width: 300px;
+  margin: 4px auto;
+  border-radius: 20px;
+}
+.total-repo {
+  margin-left: 8px;
+}
+.open-repo {
+  border-color: #6c6a6a;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+.open-repo:hover {
+  background-color: #a4a8a8ae;
+}
+.repositories-box {
+  text-align: center;
+}
+.loading {
+  letter-spacing: 0.1em;
+  font-size: 18px;
+  font-weight: 700;
+  color: #a29d9b;
+}
+.repositories-list {
+  text-align: left;
+  padding: 0 124px;
+}
+.repositories-item {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #c6d7fa;
+  border-bottom: 1px solid #d8dee4;
+}
+.repositories-item:not(:last-child) {
+  margin-bottom: 2px;
+}
+.repositories-item--title {
+  font-weight: 700;
+  color: rgb(76, 142, 145);
+}
+.repositories-item--text {
+  color: #484a4a;
+  font-style: oblique;
+  margin-left: 8px;
+  font-weight: 400;
+}
+.repositories-item--title:not(:last-child) {
+  margin-bottom: 8px;
+}
+.repositories-item--error {
+  text-align: center;
+  color: rgb(156, 32, 32);
+}
+.detail-repositories {
+  text-decoration-line: underline;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(8, 8, 247);
+}
+
+.detail-info {
+  color: black;
+  margin-left: 24px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My GitHub Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!------------- Header ------------->
+    <header class="header">
+      <div class="container container-header">
+        <!------------- Logo ------------->
+        <a href="" class="header-logo">
+          <img src="./images/Logo.svg" alt="Logo GitHub" />
+        </a>
+
+        <span class="profile-title">My GitHub Profile</span>
+
+        <img
+          class="foto-user"
+          src="./images/foto-user.svg"
+          alt="Foto profile user"
+        />
+      </div>
+    </header>
+
+    <!------------- Main ------------->
+    <main>
+      <!------------- Profile section ------------->
+      <section class="section">
+        <div class="container profile-container">
+          <div class="profile-info">
+            <ul class="profile-list list">
+              <li class="profile-item">
+                <p class="profile-item--title">Name</p>
+                <p class="profile-item--text">Alex Gorshkoder</p>
+              </li>
+              <li class="profile-item">
+                <p class="profile-item--title">Location</p>
+                <p class="profile-item--text">Cherkassy, Ukraine</p>
+              </li>
+              <li class="profile-item">
+                <p class="profile-item--title">Contacts</p>
+                <p class="profile-item--text">
+                  <a class="contacts-link" href="tel:+380674552288"
+                    >+38 (067) 455-22-88</a
+                  >,
+                  <a class="contacts-link" href="mailto:s.gorshkoder@gmail.com"
+                    >s.gorshkoder@gmail.com</a
+                  >
+                </p>
+              </li>
+              <li class="profile-item">
+                <p class="profile-item--title">Repositories</p>
+                <p class="profile-item--text">
+                  Total:
+                  <img
+                    class="loader"
+                    src="./images/loader.gif"
+                    alt="loader..."
+                  />
+                  <span class="total-repo"></span>
+                  <button type="button" class="open-repo">
+                    Open repositories
+                  </button>
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="repositories-box">
+            <span class="loading visually-hidden">Loading...</span>
+
+            <ul class="repositories-list list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
